@@ -226,7 +226,6 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			}
 			h4 {
 				margin-bottom: 10px;
-				letter-spacing: 2px;
     				font-size: 18px;
     				font-family: 'Montserrat',sans-serif;
 			}
@@ -265,6 +264,9 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				height: 55px;
 				margin: 15px 20px 35px;
 			}
+			#welcome b {
+				font-family: 'Montserrat',sans-serif;
+			}
 			#idp-icon {
 				position: absolute;
 				margin-top: 2px;
@@ -273,35 +275,6 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			#login-form{
 				margin: 0;
 				padding: 0;
-			}
-			.button-primary {
-				background-color: #21759b;
-				background-image: linear-gradient(to bottom, #2a95c5, #21759b);
-				border-color: #21759b #21759b #1e6a8d;
-				border-radius: 3px;
-				border-style: solid;
-				border-width: 1px;
-				box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset;
-				box-sizing: border-box;
-				color: #fff;
-				cursor: pointer;
-				display: inline-block;
-				float: none;
-				font-size: 12px;
-				height: 36px;
-				line-height: 23px;
-				margin: 0;
-				padding: 0 10px 1px;
-				text-decoration: none;
-				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-				white-space: nowrap;
-			}
-			.button-primary.focus, .button-primary:hover{
-				background:#1e8cbe;
-				border-color:#0074a2;
-				-webkit-box-shadow:inset 0 1px 0 rgba(120,200,230,.6);
-				box-shadow:inset 0 1px 0 rgba(120,200,230,.6);
-				color:#fff
 			}
 			input[type="text"]{
 				border: 1px solid #e5e5e5;
