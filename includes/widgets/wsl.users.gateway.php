@@ -312,7 +312,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				color: #00aced;
 			}
 			.fa-google-plus {
-				color: ;#dd4b39;
+				color: #dd4b39;
 			}
 			.fa-facebook {
 				color: #3b5998;
