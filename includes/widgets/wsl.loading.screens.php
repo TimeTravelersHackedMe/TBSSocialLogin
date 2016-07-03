@@ -41,7 +41,7 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 				background: #f1f1f1;
 			}
 			body {
-				background: #fff;
+				background: #232323;
 				color: #444;
 				font-family: "Open Sans", sans-serif;
 				margin: 2em auto;
