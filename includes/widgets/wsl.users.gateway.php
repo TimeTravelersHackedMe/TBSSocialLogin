@@ -304,6 +304,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			}
 			.button-primary:active, .button-primary:hover {
     				outline: 0;
+    				cursor: pointer;
 			}
 			input[type="text"]{
 				border: 1px solid #e5e5e5;
