@@ -227,7 +227,7 @@ function wsl_render_auth_widget( $args = array() )
 ?>
 
 		<a rel="nofollow" href="<?php echo $authenticate_url; ?>" title="<?php echo sprintf( _wsl__("Connect with %s", 'wordpress-social-login'), $provider_name ) ?>" class="wp-social-login-provider wp-social-login-provider-<?php echo strtolower( $provider_id ); ?>" data-provider="<?php echo $provider_id ?>">
-			<?php if( $social_icon_set == 'none' ){ echo apply_filters( 'wsl_render_auth_widget_alter_provider_name', $provider_name ); } else { ?><i class="fa <?php if($provider_name == 'twitter') {echo 'fa-twitter';} else if($provider_name == 'google') {echo 'fa-google-plus';} else if($provider_name == 'facebook') {echo 'fa-facebook';} ?>" aria-hidden="true" /></i><?php echo $provider_name; ?><?php } ?>
+			<?php if( $social_icon_set == 'none' ){ echo apply_filters( 'wsl_render_auth_widget_alter_provider_name', $provider_name ); } else { ?><i class="fa <?php if(strtolower($provider_name) == 'twitter') {echo 'fa-twitter';} else if(strtolower($provider_name) == 'google') {echo 'fa-google-plus';} else if(strtolower($provider_name) == 'facebook') {echo 'fa-facebook';} ?>" aria-hidden="true" /></i><?php echo $provider_name; ?><?php } ?>
 
 		</a>
 <?php
