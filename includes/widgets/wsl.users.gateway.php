@@ -311,6 +311,12 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			.fa-twitter {
 				color: #00aced;
 			}
+			.fa-google-plus {
+				color: ;#dd4b39;
+			}
+			.fa-facebook {
+				color: #3b5998;
+			}
 			input[type="text"]{
 				border: 1px solid #e5e5e5;
 				box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.2) inset;
