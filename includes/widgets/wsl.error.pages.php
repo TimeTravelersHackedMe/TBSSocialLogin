@@ -67,7 +67,7 @@ if( ! function_exists( 'wsl_render_notice_page' ) )
 				font-family: "Open Sans", sans-serif;
 				margin: 2em auto;
 				padding: 1em 2em;
-				max-width: 616px;
+				max-width: 588px;
 				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
 				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
 				margin-top: 142px;
