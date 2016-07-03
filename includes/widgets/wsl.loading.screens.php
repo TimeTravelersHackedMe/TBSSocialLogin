@@ -47,15 +47,23 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 				color: #000;
 				font-family: "Open Sans", sans-serif;
 			}
-			.parent {
-  				position: relative;
-			}
-			.child {
-  				position: absolute;
-  				top: 50%;
-  				left: 50%;
-  				transform: translate(-50%, -50%);
-			}
+            .outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
 		</style>
 		<script>
 			function init()
@@ -64,12 +72,14 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 			}
 		</script>
 	</head>
-	<body id="loading-screen" onload="init();">
-		<div class="parent">
-			<div class="child">
+	<body id="loading-screen" onload="init()">
+<div class="outer">
+<div class="middle">
+<div class="inner">
 				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
 			</div>
-		</div>
+            </div>
+            </div>
 	</body>
 </html>
 <?php
@@ -106,31 +116,30 @@ if( ! function_exists( 'wsl_render_return_from_provider_loading_screen' ) )
 		<title><?php _wsl_e("Redirecting...", 'wordpress-social-login') ?> - <?php bloginfo('name'); ?></title>
 		<style type="text/css">
 			html {
-				background: #f1f1f1;
+				background: white;
 			}
 			body {
 				background: #fff;
-				color: #444;
+				color: #000;
 				font-family: "Open Sans", sans-serif;
-				margin: 2em auto;
-				padding: 1em 2em;
-				max-width: 700px;
-				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
 			}
-			#loading-screen {
-				margin-top: 50px;
-			}
-			#loading-screen div{
-				line-height: 20px;
-				padding: 8px;
-				background-color: #f2f2f2;
-				border: 1px solid #ccc;
-				padding: 10px;
-				text-align:center;
-				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-				margin-top:25px;
-			}
+			.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
 		</style>
 		<script>
 			function init()
@@ -163,24 +172,13 @@ if( ! function_exists( 'wsl_render_return_from_provider_loading_screen' ) )
 		</script>
 	</head>
 	<body id="loading-screen" onload="init();">
-		<table width="100%" border="0">
-			<tr>
-				<td align="center"><img src="<?php echo $assets_base_url ?>loading.gif" /></td>
-			</tr>
-			<tr>
-				<td align="center">
-					<div>
-						<?php echo _wsl_e( "Processing, please wait...", 'wordpress-social-login');  ?>
-					</div>
-				</td>
-			</tr>
-		</table>
-
-		<form name="loginform" method="post" action="<?php echo $authenticated_url; ?>">
-			<input type="hidden" id="redirect_to" name="redirect_to" value="<?php echo esc_url( $redirect_to ); ?>">
-			<input type="hidden" id="provider" name="provider" value="<?php echo $provider ?>">
-			<input type="hidden" id="action" name="action" value="wordpress_social_authenticated">
-		</form>
+<div class="outer">
+<div class="middle">
+<div class="inner">
+				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
+			</div>
+            </div>
+            </div>
 	</body>
 </html>
 <?php
