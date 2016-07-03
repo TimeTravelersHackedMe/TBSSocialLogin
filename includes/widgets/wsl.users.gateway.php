@@ -206,6 +206,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title><?php echo get_bloginfo('name'); ?></title>
 		<link rel="stylesheet" id="cb-font-stylesheet-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7COpen+Sans%3A400%2C700%2C400italic&amp;ver=3.0.2" type="text/css" media="all">
+                <link rel="stylesheet" id="fontawesome-css" href="https://thebestsites.com/wp-content/themes/15zine/library/css/font-awesome-4.6.3/css/font-awesome.min.css?ver=4.6.3" type="text/css" media="all">
                 <style type="text/css">
 			html, body {
 				height: 100%;
@@ -468,7 +469,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				</div>
 
 				<div id="welcome">
-					<img id="idp-icon" src="<?php echo $assets_base_url . strtolower($provider); ?>.png" >
+					<img id="idp-icon" src="<?php if($provider == 'twitter') {echo $assets_base_url . strtolower($provider);} ?>.png" >
 					<b><?php printf( _wsl__( "Hi %s", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?></b>
 					<p><?php printf( _wsl__( "You're now signed in with your %s account but you are still one step away of getting into our website", 'wordpress-social-login' ), $provider ); ?>.</p>
 
