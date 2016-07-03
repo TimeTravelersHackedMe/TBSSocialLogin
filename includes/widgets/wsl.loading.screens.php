@@ -44,26 +44,8 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 			}
 			body {
 				background: white;
-				color: #444;
+				color: #000;
 				font-family: "Open Sans", sans-serif;
-				margin: 2em auto;
-				padding: 1em 2em;
-				max-width: 700px;
-				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-			}
-			#loading-screen {
-				margin-top: 50px;
-			}
-			#loading-screen div{
-				line-height: 20px;
-				padding: 8px;
-				background-color: #f2f2f2;
-				border: 1px solid #ccc;
-				padding: 10px;
-				text-align:center;
-				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
-				margin-top:25px;
 			}
 		</style>
 		<script>
