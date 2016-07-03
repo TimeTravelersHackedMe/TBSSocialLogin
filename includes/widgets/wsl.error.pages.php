@@ -39,11 +39,12 @@ if( ! function_exists( 'wsl_render_notice_page' ) )
 		<title><?php bloginfo('name'); ?></title>
 		<style type="text/css">
 			body {
-				background: #f1f1f1;
+				background: #232323;
 			}
 			h4 {
 				color: #666;
-				font: 20px "Open Sans", sans-serif;
+				font-family: 'Montserrat',sans-serif;
+				font-size: 20px;
 				margin: 0;
 				padding: 0;
 				padding-bottom: 12px;
@@ -83,6 +84,7 @@ if( ! function_exists( 'wsl_render_notice_page' ) )
 				text-align:center;
 				box-shadow: 0 1px 3px rgba(0,0,0,0.13);
 				margin-top:25px;
+				font-family: 'Montserrat',sans-serif;
 			}
 		</style>
 	<head>
