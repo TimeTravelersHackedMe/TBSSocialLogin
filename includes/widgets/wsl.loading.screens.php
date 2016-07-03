@@ -72,18 +72,7 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 		</script>
 	</head>
 	<body id="loading-screen" onload="init();">
-		<table width="100%" border="0">
-			<tr>
-				<td align="center"><img src="<?php echo $assets_base_url ?>loading.gif" /></td>
-			</tr>
-			<tr>
-				<td align="center">
-					<div>
-						<?php echo sprintf( _wsl__( "Contacting <b>%s</b>, please wait...", 'wordpress-social-login'), _wsl__( ucfirst( $provider ), 'wordpress-social-login') )  ?>
-					</div>
-				</td>
-			</tr>
-		</table>
+		<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
 	</body>
 </html>
 <?php
