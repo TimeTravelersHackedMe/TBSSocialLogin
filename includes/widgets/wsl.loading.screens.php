@@ -114,6 +114,8 @@ if( ! function_exists( 'wsl_render_return_from_provider_loading_screen' ) )
 		<meta name="robots" content="NOINDEX, NOFOLLOW">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title><?php _wsl_e("Redirecting...", 'wordpress-social-login') ?> - <?php bloginfo('name'); ?></title>
+		<link rel="stylesheet" id="cb-main-stylesheet-css" href="https://thebestsites.com/wp-content/themes/15zine/library/css/style.css?ver=3.0.2" type="text/css" media="all">
+		<link rel="stylesheet" id="fontawesome-css" href="https://thebestsites.com/wp-content/themes/15zine/library/css/font-awesome-4.6.3/css/font-awesome.min.css?ver=4.6.3" type="text/css" media="all">
 		<style type="text/css">
 			html {
 				background: white;
