@@ -205,7 +205,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title><?php echo get_bloginfo('name'); ?></title>
-                <link rel="stylesheet" id="cb-font-stylesheet-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7COpen+Sans%3A400%2C700%2C400italic&amp;ver=3.0.2" type="text/css" media="all">
+		<link rel="stylesheet" id="cb-font-stylesheet-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7COpen+Sans%3A400%2C700%2C400italic&amp;ver=3.0.2" type="text/css" media="all">
                 <style type="text/css">
 			html, body {
 				height: 100%;
@@ -213,9 +213,9 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				padding: 0;
 			}
 			body {
-				background: none repeat scroll 0 0 #f1f1f1;
+				background: none repeat scroll 0 0 #232323;
 				font-size: 14px;
-				color: #444;
+				color: #484848;
 				font-family: "Open Sans",sans-serif;
 			}
 			hr {
@@ -225,8 +225,10 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				margin: 2px 0 0;
 			}
 			h4 {
-				font-size: 14px;
 				margin-bottom: 10px;
+				letter-spacing: 2px;
+    				font-size: 18px;
+    				font-family: 'Montserrat',sans-serif;
 			}
 			#login {
 				width: 616px;
@@ -360,6 +362,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			.back-to-home {
 				font-size: 12px;
 				margin-top: -18px;
+				font-family: 'Montserrat',sans-serif;
 			}
 			.back-to-home a {
 				color: #999;
@@ -392,10 +395,6 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				}
 			?>
 		</style>
-		<link rel="stylesheet" id="cb-main-stylesheet-css" href="https://thebestsites.com/wp-content/themes/15zine/library/css/style
-.css?ver=3.0.2" type="text/css" media="all">
-                <link rel="stylesheet" id="cb-font-stylesheet-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7COpen+San
-s%3A400%2C700%2C400italic&amp;ver=3.0.2" type="text/css" media="all">
                 <script>
 			// good old time
 			function toggleEl( el, display )
