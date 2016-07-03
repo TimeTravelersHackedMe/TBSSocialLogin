@@ -27,7 +27,7 @@ if( !defined( 'ABSPATH' ) ) exit;
 */
 if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 {
-	function wsl_render_redirect_to_provider_loading_screen(  )
+	function wsl_render_redirect_to_provider_loading_screen( $provider )
 	{
 		$assets_base_url  = WORDPRESS_SOCIAL_LOGIN_PLUGIN_URL . 'assets/img/';
 ?>
@@ -38,10 +38,10 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 		<title><?php _wsl_e("Redirecting...", 'wordpress-social-login') ?> - <?php bloginfo('name'); ?></title>
 		<style type="text/css">
 			html {
-				background: #f1f1f1;
+				background: #232323;
 			}
 			body {
-				background: #232323;
+				background: white;
 				color: #444;
 				font-family: "Open Sans", sans-serif;
 				margin: 2em auto;
