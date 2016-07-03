@@ -291,7 +291,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
     				line-height: 1.8;
     				background: white;
 			}
-			@media only screen and (min-width: 768px)
+			@media only screen and (min-width: 768px) {
 				.button-primary {
     					-webkit-transition: 0.25s ease all;
     					-transition: 0.25s ease all;
