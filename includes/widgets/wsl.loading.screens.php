@@ -27,7 +27,7 @@ if( !defined( 'ABSPATH' ) ) exit;
 */
 if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 {
-	function wsl_render_redirect_to_provider_loading_screen( $provider )
+	function wsl_render_redirect_to_provider_loading_screen(  )
 	{
 		$assets_base_url  = WORDPRESS_SOCIAL_LOGIN_PLUGIN_URL . 'assets/img/';
 ?>
