@@ -472,7 +472,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				</div>
 
 				<div id="welcome">
-					<i class="fa <?php if(strtolower($provider) == 'twitter') {echo 'fa-twitter';} ?>" style="font-size: 200%;" aria-hidden="true"></i>
+					<i class="fa <?php if(strtolower($provider) == 'twitter') {echo 'fa-twitter';} else if(strtolower($provider) == 'google') {echo 'fa-google-plus'} else if(strtolower($provider) == 'facebook') {echo 'fa-facebook'} ?>" style="font-size: 200%; margin-right: 5px;" aria-hidden="true"></i>
 					<b><?php printf( _wsl__( "Hi %s", 'wordpress-social-login' ), htmlentities( $hybridauth_user_profile->displayName ) ); ?></b>
 					<p><?php printf( _wsl__( "You're now signed in with your %s account but you are still one step away of getting into our website", 'wordpress-social-login' ), $provider ); ?>.</p>
 
