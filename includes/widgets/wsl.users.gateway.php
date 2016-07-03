@@ -266,6 +266,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			}
 			#welcome b {
 				font-family: 'Montserrat',sans-serif;
+				font-size: 200%;
 			}
 			#idp-icon {
 				position: absolute;
