@@ -276,6 +276,35 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				margin: 0;
 				padding: 0;
 			}
+			.button-primary {
+				display: table;
+    				margin: 0 auto;
+    				margin-top: 5px;
+    				margin-bottom: 5px;
+    				letter-spacing: 2px;
+    				padding: 5px 10px;
+    				font-size: 14px!important;
+				border: 1px solid #161616;
+    				color: #161616;
+    				font-family: 'Montserrat',sans-serif;
+    				text-transform: uppercase;
+    				line-height: 1.8;
+    				background: white;
+			}
+			@media only screen and (min-width: 768px)
+				.button-primary {
+    					-webkit-transition: 0.25s ease all;
+    					-transition: 0.25s ease all;
+    					transition: 0.25s ease all;
+				}
+				.button-primary:hover {
+    					background: #161616;
+    					color: #fff;
+				}
+			}
+			.button-primary:active, .button-primary:hover {
+    				outline: 0;
+			}
 			input[type="text"]{
 				border: 1px solid #e5e5e5;
 				box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.2) inset;
