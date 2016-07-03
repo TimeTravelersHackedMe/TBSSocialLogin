@@ -76,7 +76,7 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 <div class="outer">
 <div class="middle">
 <div class="inner">
-				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
+				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i></span>
 			</div>
             </div>
             </div>
@@ -175,7 +175,7 @@ if( ! function_exists( 'wsl_render_return_from_provider_loading_screen' ) )
 <div class="outer">
 <div class="middle">
 <div class="inner">
-				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
+				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i></span>
 			</div>
             </div>
             </div>
