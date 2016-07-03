@@ -47,6 +47,15 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 				color: #000;
 				font-family: "Open Sans", sans-serif;
 			}
+			.parent {
+  				position: relative;
+			}
+			.child {
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+			}
 		</style>
 		<script>
 			function init()
@@ -56,7 +65,11 @@ if( ! function_exists( 'wsl_render_redirect_to_provider_loading_screen' ) )
 		</script>
 	</head>
 	<body id="loading-screen" onload="init();">
-		<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
+		<div class="parent">
+			<div class="child">
+				<span id="cb-alp-loader" class="cb-alp-ld"><i class="fa fa-circle-o-notch fa-3x fa-fw"></i><span class="cb-end">No more articles</span></span>
+			</div>
+		</div>
 	</body>
 </html>
 <?php
