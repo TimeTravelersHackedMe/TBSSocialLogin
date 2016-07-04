@@ -372,6 +372,9 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 			.back-to-options {
 				float: left;
 				margin: 7px 0px;
+				    color: #999;
+    font-family: 'Montserrat',sans-serif;
+    text-decoration: none;
 			}
 			.back-to-home {
 				font-size: 12px;
