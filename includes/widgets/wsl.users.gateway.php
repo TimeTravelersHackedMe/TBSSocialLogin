@@ -214,7 +214,7 @@ function wsl_process_login_new_users_gateway( $provider, $redirect_to, $hybridau
 				padding: 0;
 			}
 			body {
-				background: none repeat scroll 0 0 #232323;
+				background: none repeat scroll 0 0 white;
 				font-size: 14px;
 				color: #484848;
 				font-family: "Open Sans",sans-serif;
